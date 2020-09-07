@@ -7,11 +7,11 @@ there are 68 coordinates from that we extract the coordinates of eyes and find t
 ![Image of Eye Aspect Ratio](https://github.com/abirami1318/Drowsiness-Detection/blob/master/dataset/ear.png)
 if the average of left and right eye aspect ratio less than threshold EAR for the consecutive number of frames,then the alarm should turn on till the EAR greater than respected ratio.
 ## Prerequisites
-!pip install pygame
-!pip install scipy
-!pip install imutils
-!pip install numpy
-!pip install dlib
+!pip install pygame<br>
+!pip install scipy<br>
+!pip install imutils<br>
+!pip install numpy<br>
+!pip install dlib<br>
 !pip install cv2
 ## How to run
 python drowsiness_detection.py
