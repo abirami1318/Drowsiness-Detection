@@ -30,7 +30,7 @@ no_frames = 10
 counter = 0
 alarm_on = False
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('D:/Abi/Project/Drowsiness_Detection/shape_predictor/shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('shape_predictor/shape_predictor_68_face_landmarks.dat')
 (lstart,lend) = face_utils.FACIAL_LANDMARKS_IDXS['left_eye']
 (rstart,rend) = face_utils.FACIAL_LANDMARKS_IDXS['right_eye']
 while True:
@@ -59,7 +59,7 @@ while True:
                 print('ALARM')
                 if not alarm_on:
                     alarm_on = True
-                soundalarm('D:/Abi/Project/Drowsiness_Detection/alarm.mp3')
+                soundalarm('alarm.mp3')
                 cv2.putText(frame, "DROWSINESS ALERT!", (10, 30),cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         else:
             counter = 0
